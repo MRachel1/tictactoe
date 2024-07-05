@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script defer src ="tictactoe.js"></script>
+</head>
+<body>
+    <header class="TicTacToe">
+        <h1>TicTacToe</h1>
+    </header>
+
+      <!-- input name -->
+
+    <main class="board">                      
+        <div class="name">
+            <input type="text" name="player1" id="player1" placeholder="Player 1" required>
+            <input type="text" name="player2" id="player2" placeholder="Player 2" required>
+        </div>
+
+        <!-- display scores -->
+
+        <div class="scores">
+          <p>Player 1 (X): <span id="player1-score">0</span></p>
+          <p>Player 2 (O): <span id="player2-score">0</span></p>
+        </div>
+
+        <!-- announce winner's name -->
+          
+        <div id="winner"></div>
+
+        <!-- buttons -->
+
+        <button class="btn" id="restart">Restart</button>
+
+        <!-- tictactoe  display -->
+
+        <div class="gameboard">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+      </main>
+</body>
+</html>

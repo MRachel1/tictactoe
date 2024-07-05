@@ -1,0 +1,106 @@
+/* tictactoe.css */
+body{
+background-image: url(https://t4.ftcdn.net/jpg/04/32/70/63/240_F_432706328_LYiccbdgohBjbnps9zvoyFS4ozcdkUww.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* filter: blur(1rem); */
+}
+
+.TicTacToe {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #FFF887;
+    text-shadow: 0 0 5px #000000a1, 0 0 10px #FFF, 0 0 15px #ffffff, 0 0 20px #010202, 0 0 30px #304901, 0 0 40px #003c8a, 0 0 50px #bee707, 0 0 60px #9abd01;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .scores{
+    color: #FFF887;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    /* margin-bottom: 20px; */
+  }
+  
+  .name input {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: 'Great vibes', cursive;
+    /* box-shadow:#FFF 0 -1px 4px, rgb(233, 144, 255) 0 -2px 5px, #8820ff 0 -5px 1px, rgb(38, 0, 255) 0 -8px 10px, 0px 0px 12px 11px rgba(0,0,0,0); */
+  }
+  
+  .gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Great vibes', cursive;
+    gap: 10px;
+  }
+  
+  .cell {
+    background-color:#000000;
+    color: #590491;
+    padding: 40px;
+    border: 1px solid #FFF887;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #f180c6;
+  }
+  
+  .btn {
+    display: flex;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  #restart {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #003152;
+    color: #FFF887;
+    cursor: pointer;
+  }
+  
+  #winner {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .winner {
+  animation: winner-animation 1s ease-in-out;
+}
+
+@keyframes winner-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
