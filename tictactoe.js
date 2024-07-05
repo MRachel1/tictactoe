@@ -48,7 +48,7 @@
           cells.forEach((cell) => {
             cell.textContent = '';
             cell.style.backgroundColor = '';
-            // cell.removeEventListener('click', handleCellClick); // Add this line
+            // cell.removeEventListener('click', handleCellClick); // 
           });
         }
   
